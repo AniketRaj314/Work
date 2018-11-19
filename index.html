@@ -53,7 +53,7 @@
     <hr>
     <div class="w3-row">  
       <div class="w3-col" style="width: 50%;">
-        <img src="images/timetable.png" class="w3-center responsive" style="border:5px solid black">
+        <img src="images/timetable.png" class="w3-center responsive ttbutton" onclick="document.getElementById('id01').style.display='block'" style="border:5px solid black">
       </div>
       <div class="w3-col w3-padding w3-center" style="width: 50%;">
         <div class="w3-row">
@@ -76,7 +76,7 @@
       <h6 class="w3-center" style="color: black; font-size:2vw; letter-spacing: 0.5em; font-weight: bold;">PRIZES</h6>
       <hr> 
         <div>
-          <img src="images/timetable.png" class="w3-center responsive" style="border:5px solid black">
+            <img src="images/timetable.png" class="w3-center responsive ttbutton" onclick="document.getElementById('id01').style.display='block'" style="border:5px solid black">
         </div>
         <br>
         <div class="w3-row w3-padding w3-center">
@@ -98,7 +98,7 @@
         <h6 class="w3-center" style="color: black; font-size:2.5vw; letter-spacing: 0.5em; font-weight: bold;">PRIZES</h6>
             <hr> 
            <div>
-              <img src="images/timetable.png" class="w3-center responsive" style="border:5px solid black">
+              <img src="images/timetable.png" class="w3-center responsive ttbutton" onclick="document.getElementById('id01').style.display='block'" style="border:5px solid black">
             </div>
             <br>
              <div>
@@ -113,11 +113,78 @@
                 </a>
               </div>
       </div>
+      <div id="id01" class="w3-modal">
+          <div class="w3-modal-content">
+            <header class="w3-container w3-black"> 
+              <span onclick="document.getElementById('id01').style.display='none'" 
+              class="w3-button w3-display-topright">&times;</span>
+              <h2>The structure of the event will be as follows:</h2>
+            </header>
+            <div class="w3-container" style="color: black;">
+              <p>There will be four groups with maximum 10 participants in each group</p>
+              <p>Group winner from each group will secure a 'Group Winner' trophy and cash-prize</p>
+              <p>Group winners will contest for the Title</p>
+              <p>Besides group winner, six other contestants from each group will be eligible for cash prize and certificate</p>
+              <p>Best Poser will receive cash prize and trophy</p>
+              <p>Hunderds of small and big surprise prizes</p>
+            </div>
+            <footer class="w3-container w3-black">
+              <p>In all there would be 200+ awards waiting to be grabbed and cash prizes worth hundreds and thousands!</p>
+            </footer>
+          </div>
+        </div>
       <div class = "w3-container gif w3-center">
         <img src="images/bodygif.gif">
       </div>
       <hr>
-      
+      <div class="w3-row large-screen w3-hide-small w3-hide-medium">
+        <p class = "w3-container" style="color: black; font-size: 2vw;">DATES OF EVENTS</p>
+        <div class="w3-col w3-container" style="width: 50%;">
+          <img src="images/schedule.png" class="responsive">
+        </div>
+        <div class="w3-col w3-container" style="width: 50%;">
+            <div class="w3-center" style="padding: 10px;" data-aos="flip-right" data-aos-duration="2000">
+                <h4 style="font-size: 1.5vw; color: black;"><i class="fa fa-quote-left"></i> It took me 20 years of hard training to get the physique I have today. What you need is what I had – belief in yourself! <i class="fa fa-quote-right"></i>
+                  <p class="w3-center" style="color: black; font-size:1vw; letter-spacing: 0.5em; font-weight: 1px;">-
+                    WARREN BRANCH</p>
+                </h4>
+              </div>
+        </div>
+      </div>
+
+      <div class = "small-screen w3-hide-large w3-hide-medium">
+        <div class="w3-container">
+          <p class = "w3-container w3-center" style="color: black; font-size: 5vw;">DATES OF EVENTS</p>
+          <img src="images/schedule.png" class="responsive">
+        </div>
+        <div class="w3-center" style="padding: 10px;" data-aos="flip-right" data-aos-duration="2000">
+          <h4 style="font-size: 2.5vw;"><i class="fa fa-quote-left"></i> It took me 20 years of hard training to get the physique I have today.<br> What you need is what I had – belief in yourself!
+             <i class="fa fa-quote-right"></i>
+            <p class="w3-center" style="color: black; font-size:2.1vw; letter-spacing: 0.5em; font-weight: 1px;">-
+              WARREN BRANCH</p>
+          </h4>
+        </div>
+      </div>
+
+      <div class = "medium-screen w3-hide-large w3-hide-small">
+        <div class="w3-container">
+          <p class = "w3-container w3-center" style="color: black; font-size: 5vw;">DATES OF EVENTS</p>
+          <img src="images/schedule.png" class="responsive">
+        </div>
+        <div class="w3-center" style="padding: 10px;" data-aos="flip-right" data-aos-duration="2000">
+          <h4 style="font-size: 2.5vw;"><i class="fa fa-quote-left"></i> It took me 20 years of hard training to get the physique I have today.<br> What you need is what I had – belief in yourself!
+             <i class="fa fa-quote-right"></i>
+            <p class="w3-center" style="color: black; font-size:2.1vw; letter-spacing: 0.5em; font-weight: 1px;">-
+              WARREN BRANCH</p>
+          </h4>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        
   <script type="text/javascript" src="js/aos.js"></script>
   <script src="js/homepage.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>

@@ -118,3 +118,11 @@
   }
 }
 
+.ttbutton:hover{
+    cursor: pointer;
+}
+
+#id01
+{
+    transition: 2s;
+}
