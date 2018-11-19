@@ -17,15 +17,20 @@
 	font-weight: bold;
 	font-size: 2.5vw;
 }
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.bgimg-2 {
+    background-image: url("../images/bgimg2.jpg");
+    min-height: 400px;
+}
+
 .bgimg-1 {
-    background-image: url("../images/bgimg1.PNG");
+    background-image: url("../images/bgimg1.jpg");
     min-height: 100%;
 }
 
@@ -64,7 +69,17 @@
 
 }
 
+.large-screen p{
+    font-size: 1.5vw;
+}
 
+.medium-screen p{
+    font-size: 2.1vw;
+}
+
+.small-screen p{
+    font-size: 2.1vw;
+}
 
 
 .overlay {
@@ -126,3 +141,4 @@
 {
     transition: 2s;
 }
+
