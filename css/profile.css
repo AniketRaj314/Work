@@ -1,0 +1,19 @@
+.card-prop
+{
+    width: 25%;
+    float: center;
+    padding: 8px;
+    border: 1px black;
+}
+
+.card-prop 
+{
+    font-size: 1.5vw;
+    color: black;
+}
+
+.img-prop
+{
+    height: 400px;
+    width: 300px;
+}
