@@ -11,11 +11,29 @@ var profile_data = [
 {
     img: "images/profiles/s2.jpg",
     name: "Ankit",
-    region: "Pune",
+    region: "Marathwada",
+    category: "Medium",
+    height: "140cm",
+    weight: "76kg",
+    BMI: "22.9"
+},
+{
+    img: "images/profiles/s3.jpg",
+    name: "Haadi",
+    region: "Thane",
+    category: "Tall",
+    height: "162cm",
+    weight: "88kg",
+    BMI: "25"
+},
+{
+    img: "images/profiles/s4.jpg",
+    name: "Shubham",
+    region: "Navi Mumbai",
     category: "Super-Tall",
-    height: "180cm",
-    weight: "92kg",
-    BMI: "22"
+    height: "190cm",
+    weight: "81kg",
+    BMI: "24"
 }
 ]; 
 
@@ -63,6 +81,7 @@ function create()
             div.appendChild(BMI);
             div.appendChild(space); 
             document.getElementById("main").appendChild(div);
+            document.getElementById("main").appendChild(document.createElement("br"));
         }
    }
 }
