@@ -46,7 +46,7 @@ function create()
             var div = document.createElement("div");
             div.setAttribute("id", "prep");
             var space = document.createElement('br');
-            div.setAttribute("class", "w3-card card-prop w3-center");
+            div.setAttribute("class", "w3-card card-prop w3-right w3-padding");
             var img = document.createElement("img");
             img.setAttribute("class", "img-prop");
             img.setAttribute("src", profile_data[i].img);
