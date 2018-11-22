@@ -48,8 +48,40 @@
         </div>
       </div>
       <br>
-      <div class = "w3-container w3-center" id = "main">
-          <button onclick = "create()">Search</button>
+
+      <div class = "w3-container w3-padding-32 w3-row w3-hide-small w3-hide-medium w3-row"  >
+        <div class="dropdown w3-col" style="width: 33%;">
+          <div class="w3-right">
+          <button onclick="toggling_button()" class="dropbtn" id="region-button">Region</button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="#about" onclick="toggling('Mumbai')">Mumbai</a>
+              <a href="#base" onclick="toggling('Mumbai Suburban')">Mumbai Suburban</a>
+              <a href="#blog" onclick="toggling('Thane')">Thane</a>
+              <a href="#contact" onclick="toggling('Navi Mumbai')">Navi Mumbai</a>
+              <a href="#custom" onclick="toggling('Raigad')">Raigad</a>
+              <a href="#support" onclick="toggling('Marathwada')">Marathwada</a>
+              <a href="#tools" onclick="toggling('Ratnagiri')">Ratnagiri</a>
+              <a href="#tools" onclick="toggling('All')">All</a>
+            </div>
+          </div>
+          </div>
+          <div class="dropdown w3-col" style="width: 33%;">
+            <div class="w3-center">
+            <button onclick="toggling_category_button()" class="dropbtn" id="category-button">Category</button>
+              <div id="myDropdown-category" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput-category" onkeyup="filterFunction_category()">
+                <a href="#about" onclick="toggling_category('Short')">Short</a>
+                <a href="#base" onclick="toggling_category('Tall')">Tall</a>
+                <a href="#blog" onclick="toggling_category('Medium Tall')">Medium Tall</a>
+                <a href="#contact" onclick="toggling_category('Super Tall')">Super Tall</a>
+                <a href="#contact" onclick="toggling_category('All')">All</a>
+              </div>
+            </div>
+            </div>
+          <div class = "w3-col" style="width: 33%;">
+            <button onclick="create()" class = "dropbtn">SEARCH</button>
+          </div>
             <!--
           <div class="w3-card card-prop w3-center">
               <img src="images/something.jpg" class = "img-prop">
@@ -58,8 +90,108 @@
         -->
         <br>
       </div>
+      <div class = "w3-container w3-row w3-hide-large"  >
+        <div class="dropdown">
+          <button onclick="toggling_button()" class="dropbtn" style="font-size: 3vw;" id="region-button">Region</button>
+            <div id="myDropdown" class="dropdown-content">
+              <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+              <a href="#about" onclick="toggling('Mumbai')">Mumbai</a>
+              <a href="#base" onclick="toggling('Mumbai Suburban')">Mumbai Suburban</a>
+              <a href="#blog" onclick="toggling('Thane')">Thane</a>
+              <a href="#contact" onclick="toggling('Navi Mumbai')">Navi Mumbai</a>
+              <a href="#custom" onclick="toggling('Raigad')">Raigad</a>
+              <a href="#support" onclick="toggling('Marathwada')">Marathwada</a>
+              <a href="#tools" onclick="toggling('Ratnagiri')">Ratnagiri</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button onclick="toggling_category_button()" class="dropbtn" id="category-button">Category</button>
+              <div id="myDropdown-category" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput-category" onkeyup="filterFunction_category()">
+                <a href="#about" onclick="toggling_category('Short')">Short</a>
+                <a href="#base" onclick="toggling_category('Tall')">Tall</a>
+                <a href="#blog" onclick="toggling_category('Medium Tall')">Medium Tall</a>
+                <a href="#contact" onclick="toggling_category('Super Tall')">Super Tall</a>
+              </div>
+            </div>
+          <button onclick="create()">Hello World</button>
+            <!--
+          <div class="w3-card card-prop w3-center">
+              <img src="images/something.jpg" class = "img-prop">
+              <p>REGION: KANTO</p>
+          </div>
+        -->
+        <br>
+      </div>
+      <div class = "w3-container w3-padding-32 w3-row w3-hide-small w3-hide-medium w3-row" id = "main">
+      </div>
       <br>
       <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!--FOOTER-->
+      <footer class = "w3-container w3-black">
+        <div class="w3-center">
+          <h2>MUMBAI-PRO</h2>
+          <h5>BODY BUILDING CHAMPIONSHIP</h5>
+        </div>
+        <br>
+        <div class = "w3-row large-screen we-hide-medium w3-hide-small">
+          <div class = "w3-col" style="width: 33%;">
+            <p>Contact Us: &nbsp; +91 0098725361</p>
+          </div>
+          <div class = "w3-col w3-center" style="width: 33%;">
+            <p>Find us on:</p>
+          </div>
+          <div class = "w3-col" style="width: 34%;">
+            <p class="w3-right">E-Mail Us: sample@sample.com</p>
+          </div>
+        </div>
+
+        <div class = "w3-row medium-screen w3-hide-large w3-hide-small">
+          <div class = "w3-col" style="width: 33%;">
+            <p>Contact Us: &nbsp; +91 0098725361</p>
+          </div>
+          <div class = "w3-col w3-center" style="width: 33%;">
+            <p>Contact Us: &nbsp; +91 0098725361</p>
+          </div>
+          <div class = "w3-col" style="width: 34%;">
+            <p class="w3-right">E-Mail Us: sample@sample.com</p>
+          </div>
+        </div>
+
+        <div class = "w3-row small-screen w3-hide-medium w3-hide-large">
+          <div class = "w3-col" style="width: 33%;">
+            <p>Contact Us: &nbsp; +91 0098725361</p>
+          </div>
+          <div class = "w3-col w3-center" style="width: 33%;">
+            <p>Contact Us: &nbsp; +91 0098725361</p>
+          </div>
+          <div class = "w3-col" style="width: 34%;">
+            <p class="w3-right">E-Mail Us: sample@sample.com</p>
+          </div>
+        </div>
+      </footer>
 <script type="text/javascript" src="js/aos.js"></script>
 <script src="js/homepage.js"></script>
 <script src="js/profile.js"></script>
