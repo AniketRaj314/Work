@@ -52,18 +52,23 @@ var profile_data = [
 function create()
 {
     var ctr = -1;
-    
     var total = count();
+    console.log(global_region + " " + global_category)
+    
+    $("#prep").remove();
     if(document.getElementById("prep") == null){
         for(var i = 0; i < profile_data.length; i++)
         {    
             if(global_region === 'All' && global_category === 'All')
                 console.log("1");
-            else if(global_region !== profile_data[i].region || global_category !== profile_data[i].category)
-                if(global_region === 'All' || global_category === 'All')
+            else if(global_region !== profile_data[i].region || global_category !== profile_data[i].category){
+                if(global_region === 'All' && global_category === profile_data[i].category)
+                    console.log("12");
+                else if(global_category === 'All' && global_region === profile_data[i].region)
                     console.log("12");
                 else
                     continue;
+            }
             else
                 console.log("2");
             ctr++;
@@ -128,16 +133,12 @@ function toggling_category_button() {
 
 function toggling(region) {
     document.getElementById("myDropdown").classList.toggle("show");
-    if(global_region!== region)
-        $("#prep").remove();
     global_region = region;
     document.getElementById("region-button").innerHTML = region;
 }
 
 function toggling_category(category) {
     document.getElementById("myDropdown-category").classList.toggle("show");
-    if(global_category !== category)
-        $("#prep").remove();
     global_category = category; 
     document.getElementById("category-button").innerHTML = category;
 }
