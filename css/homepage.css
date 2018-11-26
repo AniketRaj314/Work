@@ -142,3 +142,13 @@
     transition: 2s;
 }
 
+.bg
+{
+    min-height: 400px;
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+background-image: url("../images/bgimg_body.jpg");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}

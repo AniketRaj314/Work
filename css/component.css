@@ -135,8 +135,8 @@
 
 /* Button 1 */
 .btn-1 {
-	border: 3px solid black;
-	color: black;
+	border: 3px solid white;
+	color: white;
 }
 
 /* Button 1a */
@@ -227,7 +227,7 @@
 	height: 0;
 	top: 50%;
 	left: 50%;
-	background: black;
+	background: white;
 	opacity: 0;
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
